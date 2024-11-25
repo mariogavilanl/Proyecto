@@ -1,0 +1,49 @@
+Stack tech
+-------
+Back
+lenguaje Jakartas (SpringBoot)
+DB Postergei o Flosterigei, Postgres
+
+Front?
+React 
+
+
+
+
+
+MODE
+-----
+Departamento (PK) ----> objetivo_departamento(idDepartamento (FK), idObjetivo(FK)) <-------- Objetivo (PK)
+
+relacion de 1 a 1 entre departamenmto y situaciuon
+
+QUESTIONS
+---------
+- que es una situacion??? Es una table
+- La pantalla debe mostrar para cada situación cuantos VOTOS se llevan para esa situación en particular, independiente de quE
+departamento las votO, mostrando además los nombres de los departamentos.
+
+REQUEWRIMIENTO
+
+    La pantalla debe permitir elegir un departamento en particular desde estrategia.org_departamento
+     De acuerdo a la tabla estrategia.bsc_r_objetivo_departamento, se deben buscar los objetivos estratégicos que tienen relación
+    con el departamento seleccionado previamente.
+    
+     Se deben buscar todas las situaciones que tengan relación con los objetivos estratégicos que están vinculados al departamento
+    seleccionado y que estén con el estado incluir = true. Estas situaciones se deben mostrar al usuario con toda su información
+    en forma tabular.
+
+     Se debe permitir VOTAR por una situación, lo que significa que se agrega una INSERT o REGISTRO en la tabla
+    estrategia.bsc_r_situacion_departamento. Se puede votar por tantas situaciones como se estime conveniente, pero solo un
+    voto por departamento por cada una de ellas.
+
+
+     La pantalla debe mostrar para cada situación cuantos VOTOS se llevan para esa situación en particular, independiente de quE
+    departamento las votO, mostrando además los nombres de los departamentos.
+
+     Debe permitir la función de revertir el voto para una situación para el departamento seleccionado, en este caso se elimina una
+    tupla de la tabla estrategia.bsc_r_situacion_departamento, para ese departamento y la situación en particular. Se debe
+    actualizar la cantidad de votos que se muestra por pantalla y los nombres de los departamentos.
+
+
+    
